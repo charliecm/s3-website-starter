@@ -1,0 +1,56 @@
+/**
+ * Helpers
+ * Common placeholders and classes.
+ */
+
+// ----------------------------------------------------------------------------
+// Placeholders
+// @extend %placeholder
+// ----------------------------------------------------------------------------
+
+%clearfix::after
+  display: table
+  clear: both
+  content: ''
+
+%overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+%background-cover
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+// ----------------------------------------------------------------------------
+// Classes
+// ----------------------------------------------------------------------------
+
+.clearfix
+  @extend %clearfix
+
+.clear
+  clear: both
+
+.push-right
+  float: right
+
+.push-left
+  float: left
+
+.text-center
+  text-align: center
+
+// Lets screen reader to describe non-text elements
+.screen-reader-text
+  position: absolute
+  margin: -1px
+  border: 0
+  padding: 0
+  width: 1px
+  height: 1px
+  overflow: hidden
+  clip: rect(0 0 0 0)

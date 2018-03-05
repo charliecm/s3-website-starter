@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "private": true,
+  "scripts": {
+    "local": "node build.js --debug",
+    "prod": "node build.js",
+    "test": "node deploy.js --test",
+    "deploy": "node deploy.js"
+  },
+  "devDependencies": {
+    "chalk": "^2.1.0",
+    "chokidar": "^2.0.2",
+    "connect": "^3.6.5",
+    "ejs": "^2.5.7",
+    "fs-extra": "^5.0.0",
+    "html-minifier": "^3.5.5",
+    "livereload": "^0.7.0",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.6",
+    "node-sass": "^4.5.3",
+    "serve-static": "^1.13.1",
+    "uglify-js": "^2.8.29"
+  }
+}

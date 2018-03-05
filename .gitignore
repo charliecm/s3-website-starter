@@ -1,0 +1,8 @@
+.env
+.sass-cache/
+node_modules/
+dist/
+npm-debug.log
+src/css/styles.css
+*.css.map
+*.sublime-*
