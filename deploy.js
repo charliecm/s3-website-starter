@@ -5,9 +5,10 @@
 const config = require('./config.js');
 const spawn = require('child_process').spawn;
 
-spawn('s3_website', [
-  'push',
-  '--site', config.dest,
-  (process.argv.includes('--test') ? '--dry-run' : '')
-  ], { stdio: 'inherit' }
-);
+var argv = [ 'push', '--site', config.dest ];
+
+if (process.argv.includes('--test')) {
+  argv.push('--dry-run');
+}
+
+spawn('s3_website', argv, { stdio: 'inherit' });
