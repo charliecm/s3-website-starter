@@ -201,6 +201,7 @@ function watch() {
  */
 function update() {
   try {
+    delete require.cache[require.resolve(MANIFEST_PATH)];
     manifest = require(MANIFEST_PATH);
   } catch (err) {
     console.error(chalk.red('  ERROR'), err);
