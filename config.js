@@ -8,7 +8,6 @@ var config = {
   src: 'src/',
   dest: 'dist/',
   css: 'src/css',
-  cssBase: 'src/css/styles.sass',
   sitemap: 'dist/sitemap.xml',
   manifest: './manifest.js'
 };

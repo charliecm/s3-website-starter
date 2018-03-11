@@ -27,7 +27,7 @@ const MANIFEST_PATH = config.manifest,
     '-r',
     '--output-style', 'compressed',
     '--source-map', config.css,
-    '-o', config.css, config.cssBase
+    '-o', config.css, config.css
   ];
 
 var debug = false,
@@ -244,6 +244,7 @@ chokidar.watch(MANIFEST_PATH).on('all', (event) => {
 
 // Build and watch SASS
 // TODO: Use node-sass JS API
+// TODO: Make watch detect new SASS files
 spawn('node-sass', SASS_CONFIG, { stdio: 'inherit' });
 spawn('node-sass', SASS_CONFIG.concat(['-w']), { stdio: 'inherit' });
 
